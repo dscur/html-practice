@@ -7,11 +7,18 @@
     <title>DSC REDLANDS HTML PLAYGROUND</title>
     <link rel="stylesheet" href="style.css">
   </head>
+  <script>
+    function wurdChanger() {
+      document.getElementById("wurds").innerHTML = "Hah, you thought.";
+    }
+  </script>
   <body>
       <h3>Ian Malcolm</h3>
 
-      <p>Hi, I'm Ian. Am noob.</p>
+      <p id="wurds">Hi, I'm Ian. Am noob.</p>
 
       <img src="img/elmofire.jpg" alt="Elmo of FIRE" width="575" height="390">
+      <br>
+      <button type="button" onclick="wurdChanger()">Button of DOOM</button>
   </body>
 </html>
