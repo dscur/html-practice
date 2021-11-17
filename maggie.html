@@ -5,16 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Maggie's Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="confettistyle.css">
   </head>
   <body>
-    <center><h1>Maggie McCormick</h1></center>
-      
-    <ul>
-        <li><p>Global Business, B.S.</p></li>
-        <li><p>Computer Science, B.A.</p></li>
-        <li><p>Google DSC, Lead</p></li>
-        <li><p>UR Climbing Club, Social Media Chair</p></li>
-    </ul>
+
+    <p>Confetti Js Effect </p>
+    <button type="button" onclick=start()>"Start"</button>
+    <!-- Here link the script file which you downloaded from the above link -->
+    <script src="confetti.js">
+        // for starting the confetti 
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  for stopping the confetti 
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+// after this here we are calling both the function so it works
+        start();
+        stop();
+
+// if you dont want to make it stop and make it infinite you can just remove the stop function
+    </script>
   </body>
 </html>
